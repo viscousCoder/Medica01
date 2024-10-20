@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
 
-    <div class="main-section">
+    <div class="main-section" id="main_box">
         <nav class="navbar">
             <div class="navbar-left">
-                <img src="./images/1..png" alt="Medica Icon" class="logo">
+                <a href="#main_box">
+                    <img src="./images/1..png" alt="Medica Icon" class="logo"></a>
                 <!-- <span class="company-name">Medica</span> -->
                 <ul class="nav-links">
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Price</a></li>
+
+                    <li><a href="#our_practices">Our Practices</a></li>
+                    <li><a href="#specification_id">Specification</a></li>
+                    <li><a href="#our_news">News Blogs</a></li>
                 </ul>
             </div>
             <div class="navbar-right">
-                <span class="contact-info">
-                    <!-- <img src="phone-icon.png" alt="Phone Icon" class="phone-icon"> -->
-                    <i class="fa-solid fa-phone"></i>
-                    <span>+1-234-567-890</span>
-                </span>
+                <a href="tel:+1234567890">
+                    <span class="contact-info">
+                        <!-- <img src="phone-icon.png" alt="Phone Icon" class="phone-icon"> -->
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+1-234-567-890</span>
+                    </span>
+                </a>
                 <button class="appointment-btn">Book an appointment</button>
             </div>
         </nav>
@@ -36,7 +42,8 @@
             <div class="text-section">
                 <h1>Experienced general practitioners who have an eye for your care</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <button>Book an appointment</button>
+                <button class="appointment-btn">Book an appointment</button>
+
             </div>
             <div class="image-section">
                 <img src="./images/doctor.png" alt="Doctor" class="doctor-image">
@@ -46,408 +53,434 @@
 
     <!-- <Second section> -->
 
-        <div class="features-section">
-            <div class="feature-column">
-                <h2>Virtual Assistant <img src="./images/arrow.png" alt="Arrow Icon" class="arrow-icon"></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="features-section">
+        <div class="feature-column">
+            <h2>Virtual Assistant <img src="./images/arrow.png" alt="Arrow Icon" class="arrow-icon"></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="thin-line"></div>
+        <div class="feature-column">
+            <h2>Virtual Clinic <img src="./images/arrow.png" alt="Arrow Icon" class="arrow-icon"></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="thin-line"></div>
+        <div class="feature-column">
+            <h2>Clinical Results <img src="./images/arrow.png" alt="Arrow Icon" class="arrow-icon"></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="thin-line"></div>
+    </div>
+
+
+    <!-- practice section -->
+    <div class="our-practices-section" id="our_practices">
+        <div class="left-column">
+            <h2>Our Practices</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <div class="right-column">
+            <div class="practice-column">
+                <div class="practice-block">
+                    <hr class="thin-line-prac">
+                    <h3>Orthopedics</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="read-more">Read More &rarr;
+                        <!-- <img src="arrow-icon.png" alt="Arrow Icon" class="arrow-icon"> -->
+                    </a>
+                </div>
+                <div class="practice-block">
+                    <hr class="thin-line-prac">
+                    <h3>Cardiology</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+                <div class="practice-block">
+                    <hr class="thin-line-prac">
+                    <h3>Dermatology</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
             </div>
-            <div class="thin-line"></div>
-            <div class="feature-column">
-                <h2>Virtual Clinic <img src="./images/arrow.png" alt="Arrow Icon" class="arrow-icon"></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="practice-column">
+                <div class="practice-block">
+                    <hr class="thin-line-prac">
+                    <h3>Neurology</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+                <div class="practice-block">
+                    <hr class="thin-line-prac">
+                    <h3>Pediatrics</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
+                <div class="practice-block">
+                    <hr class="thin-line-prac">
+                    <h3>Oncology</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </div>
             </div>
-            <div class="thin-line"></div>
-            <div class="feature-column">
-                <h2>Clinical Results <img src="./images/arrow.png" alt="Arrow Icon" class="arrow-icon"></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="all-practices-button">
+                <button>All Practices</button>
             </div>
-            <div class="thin-line"></div>
+        </div>
+    </div>
+
+
+    <!-- Why to Choose Us Section -->
+    <div class="why-choose-us-section">
+        <h2>Why to Choose Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        <div class="video-thumbnail">
+            <a href="https://www.youtube.com/watch?v=un7OziPGNo0" target="_blank">
+                <img src="./images/lab.webp" alt="Video Thumbnail" class="thumbnail-img">
+                <div class="play-icon-overlay">
+                    <img src="./images//play.png" alt="Play Icon" class="play-icon">
+                </div>
+            </a>
         </div>
 
-
-        <!-- practice section -->
-<div class="our-practices-section">
-    <div class="left-column">
-        <h2>Our Practices</h2>
+        <h3>Consectetur adipiscing elit, sed do eiusmod tempor</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
     </div>
-    <div class="right-column">
-        <div class="practice-column">
-            <div class="practice-block">
-                <hr class="thin-line-prac">
-                <h3>Orthopedics</h3>
+
+    <!-- Specification Section -->
+    <div class="specification-section" id="specification_id">
+        <div class="row">
+            <div class="column text-column">
+                <h2>Dedicated doctors with the core mission to help.</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <a href="#" class="read-more">Read More  &rarr;
+                <a href="#" class="see-doctors">See our doctors &rarr;
                     <!-- <img src="arrow-icon.png" alt="Arrow Icon" class="arrow-icon"> -->
                 </a>
             </div>
-            <div class="practice-block">
-                <hr class="thin-line-prac">
-                <h3>Cardiology</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <a href="#" class="read-more">Read More  &rarr;</a>
-            </div>
-            <div class="practice-block">
-                <hr class="thin-line-prac">
-                <h3>Dermatology</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <a href="#" class="read-more">Read More  &rarr;</a>
+            <div class="column image-column">
+                <img src="./images/doctor_spec.jpg" alt="Doctor Image" class="responsive-image">
             </div>
         </div>
-        <div class="practice-column">
-            <div class="practice-block">
-                <hr class="thin-line-prac">
-                <h3>Neurology</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <a href="#" class="read-more">Read More  &rarr;</a>
+        <div class="row">
+            <div class="column image-column">
+                <img src="./images/doctor-spec-1.webp" alt="Test Image" class="responsive-image">
             </div>
-            <div class="practice-block">
-                <hr class="thin-line-prac">
-                <h3>Pediatrics</h3>
+            <div class="column text-column">
+                <h2>Get access to specialty tests and breakthrough information.</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <a href="#" class="read-more">Read More  &rarr;</a>
-            </div>
-            <div class="practice-block">
-                <hr class="thin-line-prac">
-                <h3>Oncology</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <a href="#" class="read-more">Read More  &rarr;</a>
+                <a href="#" class="find-tests">Find tests &rarr;</a>
             </div>
         </div>
-        <div class="all-practices-button">
-            <button>All Practices</button>
+        <div class="row">
+            <div class="column text-column">
+                <h2>Find out how we can help you.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <button class="book-appointment">Book a virtual appointment</button>
+            </div>
+            <div class="column image-column">
+                <img src="./images/doctor-spec-2.jpeg" alt="Help Image" class="responsive-image">
+            </div>
         </div>
     </div>
-</div>
 
 
-<!-- Why to Choose Us Section -->
-<div class="why-choose-us-section">
-    <h2>Why to Choose Us</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-    <div class="video-thumbnail">
-        <a href="https://www.youtube.com/watch?v=un7OziPGNo0" target="_blank">
-            <img src="./images/lab.webp" alt="Video Thumbnail" class="thumbnail-img">
-            <div class="play-icon-overlay">
-                <img src="./images//play.png" alt="Play Icon" class="play-icon">
-            </div>
-        </a>
+    <!-- Book Appointment Section -->
+    <div class="book-appointment-section">
+        <h2>Schedule an in-person or virtual appointment today</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="button-container">
+            <button class="book-in-person">Book in-person appointment</button>
+            <button class="book-virtual">Book virtual appointment</button>
+        </div>
     </div>
 
-    <h3>Consectetur adipiscing elit, sed do eiusmod tempor</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-</div>
 
-<!-- Specification Section -->
-<div class="specification-section">
-    <div class="row">
-        <div class="column text-column">
-            <h2>Dedicated doctors with the core mission to help.</h2>
+    <!-- Search Disease Section -->
+    <div class="search-disease-section">
+        <div class="left-column">
+            <h2>Search Diseases & Conditions</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <a href="#" class="see-doctors">See our doctors  &rarr;
-                <!-- <img src="arrow-icon.png" alt="Arrow Icon" class="arrow-icon"> -->
-            </a>
         </div>
-        <div class="column image-column">
-            <img src="./images/doctor_spec.jpg" alt="Doctor Image" class="responsive-image">
+        <div class="right-column">
+            <!-- Alphabet Buttons -->
+            <div class="alphabet-buttons">
+                <div class="row">
+                    <span>A</span>
+                    <span>B</span>
+                    <span>C</span>
+                    <span>D</span>
+                    <span>E</span>
+                    <span>F</span>
+                    <span>G</span>
+                    <span>H</span>
+                    <span>I</span>
+                    <span>J</span>
+                </div>
+                <div class="row">
+                    <span>K</span>
+                    <span>L</span>
+                    <span>M</span>
+                    <span>N</span>
+                    <span>O</span>
+                    <span>P</span>
+                    <span>Q</span>
+                    <span>R</span>
+                    <span>S</span>
+                    <span>T</span>
+                </div>
+                <div class="row">
+                    <span>U</span>
+                    <span>V</span>
+                    <span>W</span>
+                    <span>X</span>
+                    <span>Y</span>
+                    <span>Z</span>
+                </div>
+            </div>
+
+            <p>You don’t know its name? Check out symptom checker below</p>
+            <hr class="separator">
+
+            <!-- Symptom Checker -->
+            <div class="symptom-checker">
+                <h3>Symptom Checker</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="symptom-list">
+                    <div class="symptom-item">Abdominal pain</div>
+                    <div class="symptom-item">Chest pain</div>
+                    <div class="symptom-item">Constipation</div>
+                    <div class="symptom-item">Cough</div>
+                    <div class="symptom-item">Breath difficulty</div>
+                    <div class="symptom-item">Red eye</div>
+                    <div class="symptom-item">Foot swelling</div>
+                    <div class="symptom-item">Foot pain</div>
+                    <div class="symptom-item">Heart palpitation</div>
+                    <div class="symptom-item">Knee pain</div>
+                    <div class="symptom-item">Hip pain</div>
+                    <div class="symptom-item">Low back pain</div>
+                    <div class="symptom-item">Nasal congestion</div>
+                    <div class="symptom-item">Neck pain</div>
+                    <div class="symptom-item">Kidney pain</div>
+
+                </div>
+            </div>
         </div>
+
     </div>
-    <div class="row">
-        <div class="column image-column">
-            <img src="./images/doctor-spec-1.webp" alt="Test Image" class="responsive-image">
-        </div>
-        <div class="column text-column">
-            <h2>Get access to specialty tests and breakthrough information.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <a href="#" class="find-tests">Find tests  &rarr;</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column text-column">
-            <h2>Find out how we can help you.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <button class="book-appointment">Book a virtual appointment</button>
-        </div>
-        <div class="column image-column">
-            <img src="./images/doctor-spec-2.jpeg" alt="Help Image" class="responsive-image">
-        </div>
-    </div>
-</div>
+    <hr class="separator">
 
 
-<!-- Book Appointment Section -->
-<div class="book-appointment-section">
-    <h2>Schedule an in-person or virtual appointment today</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-    <div class="button-container">
-        <button class="book-in-person">Book in-person appointment</button>
-        <button class="book-virtual">Book virtual appointment</button>
+
+    <!-- Book Appointment Section -->
+
+
+    <div class="book-appointment-container">
+        <div class="left-column">
+            <div class="heading-section">
+                <h2>Book an Appointment</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="form-card">
+                <div class="appointment-options">
+                    <div class="option-box selected" id="in-person-option">In Person Appointment</div>
+                    <div class="option-box" id="virtual-option">Virtual Appointment</div>
+                </div>
+
+                <form class="appointment-form">
+                    <input type="text" placeholder="Name" class="form-input" />
+                    <input type="email" placeholder="Email" class="form-input" />
+                    <input type="tel" placeholder="Phone Number" class="form-input" />
+                    <div class="date-container">
+                        <input type="date" placeholder="DD/MM/YYYY" class="form-input date-input" />
+                        <span class="calendar-icon">📅</span>
+                    </div>
+                    <select class="form-input">
+                        <option value="">Select Practice</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="dermatology">Dermatology</option>
+                    </select>
+                    <div class="additional-inputs" id="virtual-inputs">
+                        <input type="text" placeholder="Virtual Meeting Link" class="form-input" />
+                        <input type="text" placeholder="Additional Notes" class="form-input" />
+                    </div>
+                    <p class="helper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt.</p>
+                    <button type="submit" class="submit-button">Book</button>
+                </form>
+
+                <p class="additional-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt.</p>
+            </div>
+        </div>
     </div>
-</div>
 
 
-<!-- Search Disease Section -->
-<div class="search-disease-section">
-    <div class="left-column">
-        <h2>Search Diseases & Conditions</h2>
+    <hr class="separator">
+
+
+    <!-- Meet Our Doctors Section -->
+    <div class="meet-doctors-section">
+        <h2>Meet Our Doctors</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-    </div>
-    <div class="right-column">
-        <!-- Alphabet Buttons -->
-        <div class="alphabet-buttons">
-            <div class="row">
-                <span>A</span>
-                <span>B</span>
-                <span>C</span>
-                <span>D</span>
-                <span>E</span>
-                <span>F</span>
-                <span>G</span>
-                <span>H</span>
-                <span>I</span>
-                <span>J</span>
+
+        <div class="doctor-navigation">
+            <div class="nav-arrows">
+                <div class="nav-arrow arrow-left">⬅</div>
+                <div class="nav-arrow arrow-right">➡</div>
             </div>
-            <div class="row">
-                <span>K</span>
-                <span>L</span>
-                <span>M</span>
-                <span>N</span>
-                <span>O</span>
-                <span>P</span>
-                <span>Q</span>
-                <span>R</span>
-                <span>S</span>
-                <span>T</span>
-            </div>
-            <div class="row">
-                <span>U</span>
-                <span>V</span>
-                <span>W</span>
-                <span>X</span>
-                <span>Y</span>
-                <span>Z</span>
+
+            <div class="doctor-cards">
+                <div class="doctor-card">
+                    <img src="./images/about-doctor-2.jpeg" alt="Dr. Aman Bisht" class="doctor-img" />
+                    <h3>Dr. Aman Bisht</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="./images/about-doctor-1.jpeg" alt="Dr. Sarah Khan" class="doctor-img" />
+                    <h3>Dr. Sarah Khan</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="./images/about-doctor-3.jpeg" alt="Dr. John Doe" class="doctor-img" />
+                    <h3>Dr. John Doe</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="./images/about-doctor-4.jpeg" alt="Dr. Jane Smith" class="doctor-img" />
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
             </div>
         </div>
 
-        <p>You don’t know its name? Check out symptom checker below</p>
-        <hr class="separator">
-
-        <!-- Symptom Checker -->
-        <div class="symptom-checker">
-            <h3>Symptom Checker</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <div class="symptom-list">
-                <div class="symptom-item">Abdominal pain</div>
-                <div class="symptom-item">Chest pain</div>
-                <div class="symptom-item">Constipation</div>
-                <div class="symptom-item">Cough</div>
-                <div class="symptom-item">Breath difficulty</div>
-                <div class="symptom-item">Red eye</div>
-                <div class="symptom-item">Foot swelling</div>
-                <div class="symptom-item">Foot pain</div>
-                <div class="symptom-item">Heart palpitation</div>
-                <div class="symptom-item">Knee pain</div>
-                <div class="symptom-item">Hip pain</div>
-                <div class="symptom-item">Low back pain</div>
-                <div class="symptom-item">Nasal congestion</div>
-                <div class="symptom-item">Neck pain</div>
-                <div class="symptom-item">Kidney pain</div>
-                
-            </div>
-        </div>
-    </div>
-    
-</div>
-<hr class="separator">
-
-
-
-<!-- Book Appointment Section -->
-<div class="book-appointment-section-form">
-    <h2>Book an Appointment</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-    
-    <div class="appointment-options">
-        <div class="option-box">In Person Appointment</div>
-        <div class="option-box">Virtual Appointment</div>
-    </div>
-
-    <form class="appointment-form">
-        <input type="text" placeholder="Name" class="form-input" />
-        <input type="email" placeholder="Email" class="form-input" />
-        <input type="tel" placeholder="Phone Number" class="form-input" />
-        <div class="date-container">
-            <input type="date" placeholder="DD/MM/YYYY" class="form-input date-input" />
-            <span class="calendar-icon">📅</span>
-        </div>
-        <select class="form-input">
-            <option value="">Select Practice</option>
-            <option value="orthopedics">Orthopedics</option>
-            <option value="pediatrics">Pediatrics</option>
-            <option value="cardiology">Cardiology</option>
-            <option value="dermatology">Dermatology</option>
-        </select>
-        <p class="helper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-        <button type="submit" class="submit-button">Book</button>
-    </form>
-
-    <p class="additional-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-</div>
-
-
-
-<!-- Meet Our Doctors Section -->
-<div class="meet-doctors-section">
-    <h2>Meet Our Doctors</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-
-    <div class="doctor-navigation">
-        <div class="nav-arrows">
-            <div class="nav-arrow arrow-left">⬅</div>
-            <div class="nav-arrow arrow-right">➡</div>
-        </div>
-
-        <div class="doctor-cards">
-            <div class="doctor-card">
-                <img src="./images/about-doctor-2.jpeg" alt="Dr. Aman Bisht" class="doctor-img" />
-                <h3>Dr. Aman Bisht</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            </div>
-            <div class="doctor-card">
-                <img src="./images/about-doctor-1.jpeg" alt="Dr. Sarah Khan" class="doctor-img" />
-                <h3>Dr. Sarah Khan</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            </div>
-            <div class="doctor-card">
-                <img src="./images/about-doctor-3.jpeg" alt="Dr. John Doe" class="doctor-img" />
-                <h3>Dr. John Doe</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            </div>
-            <div class="doctor-card">
-                <img src="./images/about-doctor-4.jpeg" alt="Dr. Jane Smith" class="doctor-img" />
-                <h3>Dr. Jane Smith</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            </div>
+        <div class="search-doctor">
+            <input type="text" placeholder="Search by Name" class="search-input" />
+            <button class="search-button">Search Doctor</button>
         </div>
     </div>
 
-    <div class="search-doctor">
-        <input type="text" placeholder="Search by Name" class="search-input" />
-        <button class="search-button">Search Doctor</button>
-    </div>
-</div>
 
 
-
-<!-- Read Latest News Section -->
-<div class="latest-news-section">
-    <h2>Read our latest news</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-
-    <div class="news-cards">
-        <div class="news-card blue-card">
-            <img src="./images/bluelogo.png" alt="News Image 1" class="news-img">
-            <small>November 23, 2022</small>
-            <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="read-more">Read more &rarr;</a>
-        </div>
-        <div class="news-card gray-card">
-            <img src="./images/family.jpeg" alt="News Image 2" class="news-img">
-            <small>November 10, 2022</small>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="read-more">Read more &rarr;</a>
-        </div>
-        <div class="news-card gray-card">
-            <img src="./images/family2.png" alt="News Image 3" class="news-img">
-            <small>October 5, 2022</small>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="read-more">Read more &rarr;</a>
-        </div>
-    </div>
-</div>
-
-
-
-<!-- Download Our Mobile App Section -->
-<div class="download-app-section">
-    <div class="download-app-container">
-        <div class="app-image">
-            <img src="./images/18.png" alt="Mobile App Image">
-        </div>
-        <div class="app-info">
-            <h2>Download our mobile app and book your next appointment</h2>
-            <div class="app-buttons">
-                <a href="#" class="app-button ios-button">
-                    <img src="./images/ios.png" alt="iOS Logo" class="button-logo">
-                    Download for iOS
-                </a>
-                <a href="#" class="app-button android-button">
-                    <img src="./images/anroid.png" alt="Android Logo" class="button-logo">
-                    Download for Android
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<footer>
-    <div class="footer-container">
-      <div class="footer-left">
-        <div class="logo-heading">
-          <img src="./images/19.png" alt="Logo">
-          <!-- <h2>Heading</h2> -->
-        </div>
+    <!-- Read Latest News Section -->
+    <div class="latest-news-section" id="our_news">
+        <h2>Read our latest news</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-        <div class="social-icons">
-          <a href="#"><img src="./images/linkedin.png" alt="LinkedIn"></a>
-          <a href="#"><img src="./images/instagram.png" alt="Instagram"></a>
-          <a href="#"><img src="./images/twitter.png" alt="Twitter"></a>
+
+        <div class="news-cards">
+            <div class="news-card blue-card">
+                <img src="./images/bluelogo.png" alt="News Image 1" class="news-img">
+                <small>November 23, 2022</small>
+                <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read more &rarr;</a>
+            </div>
+            <div class="news-card gray-card">
+                <img src="./images/family.jpeg" alt="News Image 2" class="news-img">
+                <small>November 10, 2022</small>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read more &rarr;</a>
+            </div>
+            <div class="news-card gray-card">
+                <img src="./images/family2.png" alt="News Image 3" class="news-img">
+                <small>October 5, 2022</small>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read more &rarr;</a>
+            </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2022 Fiebest. All rights reserved</p>
-          <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms and Use</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-right">
-        <div class="footer-column">
-          <h3>Menu</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Support</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Resources</h3>
-          <ul>
-            <li><a href="#">Test Results</a></li>
-            <li><a href="#">Patients</a></li>
-            <li><a href="#">Doctors</a></li>
-            <li><a href="#">Health</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Contact</h3>
-          <ul>
-            <li>24 Street Name, City 01234</li>
-            <li><a href="mailto:celestialsystem.com">celestialsystem.com</a></li>
-            <li><a href="tel:+0973745345234678">(097) 3745-345-234678</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </footer>
-  
+
+
+
+    <!-- Download Our Mobile App Section -->
+    <div class="download-app-section">
+        <div class="download-app-container">
+            <div class="app-image">
+                <img src="./images/18.png" alt="Mobile App Image">
+            </div>
+            <div class="app-info">
+                <h2>Download our mobile app and book your next appointment</h2>
+                <div class="app-buttons">
+                    <a href="#" class="app-button ios-button">
+                        <img src="./images/ios.png" alt="iOS Logo" class="button-logo">
+                        Download for iOS
+                    </a>
+                    <a href="#" class="app-button android-button">
+                        <img src="./images/anroid.png" alt="Android Logo" class="button-logo">
+                        Download for Android
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="logo-heading">
+                    <img src="./images/19.png" alt="Logo">
+                    <!-- <h2>Heading</h2> -->
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="./images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="./images/twitter.png" alt="Twitter"></a>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2022 Fiebest. All rights reserved</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Use</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-column">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Test Results</a></li>
+                        <li><a href="#">Patients</a></li>
+                        <li><a href="#">Doctors</a></li>
+                        <li><a href="#">Health</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>24 Street Name, City 01234</li>
+                        <li><a href="mailto:celestialsystem.com">celestialsystem.com</a></li>
+                        <li><a href="tel:+0973745345234678">(097) 3745-345-234678</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
 
-    
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

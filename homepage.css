@@ -8,6 +8,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
 
 /* Main Section with two-color background */
 .main-section {
@@ -65,6 +69,9 @@ body {
   display: flex;
   align-items: center;
   margin-right: 20px;
+}
+.contact-info {
+  cursor: pointer;
 }
 
 .phone-icon {
@@ -473,6 +480,7 @@ body {
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .alphabet-buttons .row {
@@ -493,6 +501,7 @@ body {
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
+  width: 32%;
 }
 
 .symptom-checker {
@@ -532,25 +541,44 @@ body {
 }
 
 /* Book Appointment Section */
-.book-appointment-section-form {
-  background-color: white;
-  padding: 40px 20px;
-  max-width: 800px;
+
+.book-appointment-container {
+  max-width: 1200px;
   margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
 }
 
-.book-appointment-section-form h2 {
-  font-size: 28px;
+.left-column {
+  flex: 30%;
+}
+
+.right-column {
+  flex: 70%;
+}
+
+.heading-section {
+  margin-bottom: 20px;
+}
+
+.heading-section h2 {
+  font-size: 52px;
   margin-bottom: 10px;
-  text-align: center;
 }
 
-.book-appointment-section-form p {
+.heading-section p {
   font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 20px;
+  padding-right: 120px;
+}
+
+.form-card {
+  width: 100%;
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .appointment-options {
@@ -570,8 +598,12 @@ body {
   transition: background-color 0.3s;
 }
 
-.option-box:hover {
-  background-color: #f0f0f0;
+.option-box.selected {
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
 }
 
 .appointment-form {
@@ -623,6 +655,15 @@ body {
 .additional-text {
   text-align: center;
   margin-top: 20px;
+}
+
+.additional-inputs {
+  display: none;
+  flex-direction: column;
+}
+
+.additional-inputs.visible {
+  display: flex;
 }
 
 /* Meet Our Doctors Section */
