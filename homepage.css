@@ -279,7 +279,7 @@ a {
 
 .why-choose-us-section p {
   /* font-size: 16px; */
-  padding: 0px 68vh;
+  /* padding: 0px 68vh; */
   font-size: 22px;
   margin-bottom: 40px;
   line-height: 1.6;
@@ -1100,6 +1100,9 @@ footer {
     padding: 8px 16px;
     font-size: 14px;
   }
+  .book-appointment-container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1140,9 +1143,12 @@ footer {
     height: 1px;
     width: 90%;
   }
+  .heading-section {
+    padding-left: 20px;
+  }
 
   .left-column h2 {
-    font-size: 78px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -1239,7 +1245,7 @@ footer {
     flex: 1 1 100%;
   }
   .appointment-options {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .option-box {
