@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const inPersonOption = document.getElementById("in-person-option");
   const virtualOption = document.getElementById("virtual-option");
   const virtualInputs = document.getElementById("virtual-inputs");
+  const bookinPerson = document.querySelector(".book-in-person");
+  const bookinVir = document.querySelector(".book-virtual");
 
   function scrollFunction(targetEle, value = true) {
     console.log(targetEle);
@@ -70,6 +72,13 @@ document.addEventListener("DOMContentLoaded", function () {
   //book virtual appointment
   virtBtn.addEventListener("click", function () {
     scrollFunction(bookAppointment, false);
+  });
+  bookinVir.addEventListener("click", function () {
+    scrollFunction(bookAppointment, false);
+  });
+
+  bookinPerson.addEventListener("click", function () {
+    scrollFunction(bookAppointment);
   });
 
   inPersonOption.addEventListener("click", () => {
