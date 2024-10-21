@@ -99,4 +99,24 @@ document.addEventListener("DOMContentLoaded", function () {
   menuBtn.addEventListener("click", function () {
     navbar.classList.toggle("active");
   });
+  // document.getElementById("menuBtn").addEventListener("click", function () {
+  //   const navLinks = document.getElementById("navLinks");
+  //   navLinks.classList.toggle("show");
+  // });
+
+  document.getElementById("menuBtn").addEventListener("click", function () {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("show");
+  });
+
+  // Close the menu when any link is clicked
+  const navLinkItems = document.querySelectorAll(
+    "#navLinks li a, .appointment-btn"
+  );
+  navLinkItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.remove("show");
+    });
+  });
 });

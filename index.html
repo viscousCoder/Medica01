@@ -10,47 +10,111 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- <script src="https://kit.fontawesome.com/472bbf1641.js" crossorigin="anonymous"></script> -->
+    <style>
+        /* Basic styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
 
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .navbar-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .menu-btn {
+            display: none;
+            /* Hide by default */
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                /* Hide menu items initially */
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                /* Adjust based on navbar height */
+                right: 20px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                padding: 10px;
+                width: 200px;
+                z-index: 1;
+            }
+
+            .nav-links.show {
+                display: flex;
+                /* Show menu items when toggled */
+            }
+
+            .menu-btn {
+                display: block;
+                /* Show menu button on smaller screens */
+            }
+
+            .navbar-right {
+                display: none;
+                /* Hide the right side on small screens */
+            }
+        }
+    </style>
 </head>
 
 <body>
+
 
     <div class="main-section" id="main_box">
         <nav class="navbar">
             <div class="navbar-left">
                 <a href="#main_box">
-                    <img src="./images/1..png" alt="Medica Icon" class="logo"></a>
-                <ul class="nav-links">
-
-                    <li><a href="#our_practices">Our Practices</a></li>
-                    <li><a href="#specification_id">Specification</a></li>
-                    <li><a href="#our_news">News Blogs</a></li>
-                </ul>
-            </div>
-            <div class="navbar-right">
-                <a href="tel:+1234567890">
-                    <span class="contact-info">
-                        <!-- <img src="phone-icon.png" alt="Phone Icon" class="phone-icon"> -->
-                        <i class="fa-solid fa-phone"></i>
-                        <span>+1-234-567-890</span>
-                    </span>
+                    <img src="./images/1..png" alt="Medica Icon" class="logo">
                 </a>
-                <button class="appointment-btn">Book an appointment</button>
+                <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
             </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#our_practices">Our Practices</a></li>
+                <li><a href="#specification_id">Specification</a></li>
+                <li><a href="#our_news">News Blogs</a></li>
+                <li>
+                    <a href="tel:+1234567890">
+                        <span class="contact-info">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+1-234-567-890</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <button class="appointment-btn">Book an appointment</button>
+                </li>
+            </ul>
         </nav>
-
         <div class="content">
             <div class="text-section">
                 <h1>Experienced general practitioners who have an eye for your care</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                 <button class="appointment-btn">Book an appointment</button>
-
             </div>
             <div class="image-section">
                 <img src="./images/doctor.png" alt="Doctor" class="doctor-image">
             </div>
         </div>
     </div>
+
 
     <!-- <Second section> -->
 
