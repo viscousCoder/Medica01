@@ -21,7 +21,7 @@ a {
   /* height: 72vh; */
   /* height: calc(100vh - 4vh); */
   background: linear-gradient(to right, white 75%, #d0f4fd 35%);
-  /* padding: 20px; */
+  padding-left: 20px;
 }
 
 .navbar {
