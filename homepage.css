@@ -1,4 +1,4 @@
-General Reset * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,11 +16,12 @@ a {
 /* Main Section with two-color background */
 .main-section {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   /* height: 72vh; */
-  height: calc(100vh - 4vh);
+  /* height: calc(100vh - 4vh); */
   background: linear-gradient(to right, white 75%, #d0f4fd 35%);
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .navbar {
@@ -49,6 +50,7 @@ a {
 .nav-links {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 
 .nav-links li {
@@ -92,7 +94,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  /* height: 100%; */
+  flex-grow: 1;
 }
 .text-section {
   width: 60%;
@@ -126,7 +129,7 @@ a {
 .doctor-image {
   width: 100%;
   /* height: 65vh; */
-  height: calc(100vh - 11vh);
+  height: calc(100vh - 10vh);
 }
 
 .features-section {
@@ -859,13 +862,14 @@ a {
 .download-app-section {
   margin-top: 200px;
   background-color: #d0f4fd;
-  height: 34vh;
+  height: 28vh;
   padding-top: 30px;
   position: relative;
 }
 
 .download-app-container {
   display: flex;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
@@ -876,12 +880,14 @@ a {
   flex: 0 0 40%;
   position: relative;
   z-index: 1;
+  height: 100%;
 }
 
 .app-image img {
+  height: 176%;
   width: 79%;
   position: relative;
-  top: -123px;
+  bottom: 76%;
 }
 .app-info {
   flex: 0 0 60%;
@@ -1302,7 +1308,7 @@ footer {
   .app-info {
     flex: none;
     padding-left: 0;
-    margin-top: -140px;
+    /* margin-top: -140px; */
     margin-bottom: 27px;
   }
 

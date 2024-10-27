@@ -11,7 +11,6 @@
 
     <!-- <script src="https://kit.fontawesome.com/472bbf1641.js" crossorigin="anonymous"></script> -->
     <style>
-        /* Basic styling */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -23,6 +22,7 @@
             display: flex;
             list-style: none;
             gap: 20px;
+            align-items: center;
         }
 
         .navbar-right {
@@ -33,22 +33,18 @@
 
         .menu-btn {
             display: none;
-            /* Hide by default */
             background: none;
             border: none;
             font-size: 24px;
             cursor: pointer;
         }
 
-        /* Responsive styles */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
-                /* Hide menu items initially */
                 flex-direction: column;
                 position: absolute;
                 top: 60px;
-                /* Adjust based on navbar height */
                 right: 20px;
                 background-color: #fff;
                 border: 1px solid #ccc;
@@ -59,17 +55,14 @@
 
             .nav-links.show {
                 display: flex;
-                /* Show menu items when toggled */
             }
 
             .menu-btn {
                 display: block;
-                /* Show menu button on smaller screens */
             }
 
             .navbar-right {
                 display: none;
-                /* Hide the right side on small screens */
             }
         }
     </style>
@@ -502,7 +495,7 @@
                     <a href="#"><img src="./images/twitter.png" alt="Twitter"></a>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2022 Fiebest. All rights reserved</p>
+                    <p>&copy; 2024 Fiebest. All rights reserved</p>
                     <div class="footer-links">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms and Use</a>
