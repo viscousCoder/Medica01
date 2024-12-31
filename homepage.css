@@ -90,6 +90,40 @@ a {
   border-radius: 5px;
 }
 
+.container {
+  /* width: 246px; */
+  overflow: hidden;
+}
+
+.container .text {
+  position: relative;
+  /* color: #4070f4; */
+  /* font-size: 30px;
+  font-weight: 600; */
+}
+
+.text.sec-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border-left: 2px solid #4070f4;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+
+  100% {
+    left: 0%;
+  }
+}
 .content {
   display: flex;
   justify-content: space-between;
@@ -104,10 +138,11 @@ a {
 .text-section h1 {
   font-size: 87px;
   font-weight: bold;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .text-section p {
+  margin-top: 20px;
   font-size: 16px;
   margin-bottom: 20px;
 }
@@ -138,8 +173,9 @@ a {
   align-items: flex-start;
   background-color: #2461ff;
   color: white;
-  padding: 86px 23px;
-  height: calc(100vh - 92vh);
+  padding: 50px 0px;
+  /* padding: 86px 23px; */
+  /* height: calc(100vh - 64vh); */
 }
 
 .feature-column {
@@ -167,7 +203,7 @@ a {
 .thin-line {
   width: 1px;
   background-color: white;
-  height: 14vh;
+  height: 8vh;
   margin: 0 20px;
 }
 
@@ -336,7 +372,7 @@ a {
 .specification-section {
   background-color: white;
   padding: 60px 20px;
-  max-width: 1200px;
+  max-width: 85%;
   margin: 0 auto;
 }
 .specification-section .row {
@@ -350,7 +386,7 @@ a {
   width: 48%;
 }
 .specification-section .text-column h2 {
-  font-size: 60px;
+  font-size: 38px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -401,16 +437,18 @@ a {
 
 .specification-section .image-column img {
   width: 81%;
-  height: 27vh;
+  height: 50vh;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Book Appointment Section */
 .book-appointment-section {
+  width: 82%;
   background-color: #2461ff;
   padding: 40px 20px;
-  margin: 0 290px;
+  /* margin: 0 121px; */
+  margin: auto;
   text-align: center;
   color: white;
   border-radius: 25px;
@@ -455,12 +493,14 @@ a {
   display: flex;
   padding: 40px 20px;
   background-color: white;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 82%;
+  margin: auto;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
 }
 
 .search-disease-section .left-column {
-  flex: 30%;
+  flex: 40%;
   padding-right: 20px;
 }
 
@@ -475,7 +515,7 @@ a {
 }
 
 .search-disease-section .right-column {
-  flex: 70%;
+  flex: 60%;
 }
 
 .alphabet-buttons {
@@ -504,7 +544,7 @@ a {
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
-  width: 32%;
+  width: 55%;
 }
 
 .symptom-checker {
@@ -532,7 +572,7 @@ a {
   background-color: #f0f0f0;
   border-radius: 15px;
   padding: 10px 15px;
-  flex: 1 1 122px;
+  flex: 1 1 131px;
   text-align: center;
 }
 

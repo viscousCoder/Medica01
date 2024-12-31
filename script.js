@@ -8,6 +8,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const bookinPerson = document.querySelector(".book-in-person");
   const bookinVir = document.querySelector(".book-virtual");
 
+  const text = document.querySelector(".sec-text");
+
+  const textLoad = () => {
+    setTimeout(() => {
+      text.textContent = "a cure with gentle care";
+    }, 0);
+    // setTimeout(() => {
+    //   text.textContent = "healing hands that repair";
+    // }, 4000);
+    setTimeout(() => {
+      text.textContent = "an eye for your care";
+    }, 4000);
+  };
+
+  textLoad();
+  setInterval(textLoad, 12000);
+
   function scrollFunction(targetEle, value = true) {
     console.log(targetEle);
     targetEle.scrollIntoView({ behavior: "smooth" });
