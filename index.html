@@ -18,11 +18,23 @@
             padding: 10px 20px;
         }
 
-        .nav-links {
+        .nav-links.show {
             display: flex;
             list-style: none;
             gap: 20px;
             align-items: center;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .navbar-right {
