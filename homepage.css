@@ -133,6 +133,7 @@ a {
 }
 .text-section {
   width: 60%;
+  padding-left: 16px;
 }
 
 .text-section h1 {
@@ -210,7 +211,7 @@ a {
 /* Our Practices Section */
 .our-practices-section {
   display: flex;
-  padding: 50px 20px;
+  padding: 50px 54px;
   background-color: #f9f9f9;
 }
 
@@ -586,7 +587,7 @@ a {
 /* Book Appointment Section */
 
 .book-appointment-container {
-  max-width: 1200px;
+  max-width: 82%;
   margin: 0 auto;
   display: flex;
   gap: 20px;
@@ -594,11 +595,11 @@ a {
 }
 
 .left-column {
-  flex: 30%;
+  flex: 40%;
 }
 
 .right-column {
-  flex: 70%;
+  flex: 60%;
 }
 
 .heading-section {
@@ -758,8 +759,8 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  gap: 20px;
-  max-width: 1000px;
+  gap: 184px;
+  /* max-width: 1000px; */
   margin-left: 20px;
 }
 
@@ -838,10 +839,10 @@ a {
 
 .news-cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 20px;
-  flex-wrap: wrap;
-  max-width: 1200px;
+  /* flex-wrap: wrap; */
+  max-width: 82%;
   margin: 0 auto;
 }
 
@@ -912,7 +913,7 @@ a {
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 73%;
   margin: 0 auto;
 }
 
@@ -1053,6 +1054,74 @@ footer {
   text-decoration: none;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-links.show {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    z-index: 1;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .footer-left,
@@ -1100,7 +1169,7 @@ footer {
   }
 
   .text-section h1 {
-    font-size: 36px; /* Reduced font size for small screens */
+    font-size: 31px; /* Reduced font size for small screens */
   }
 
   .text-section p {
@@ -1149,6 +1218,15 @@ footer {
   .book-appointment-container {
     flex-direction: column;
   }
+  .left-column p {
+    padding: 0;
+  }
+  .specification-section .image-column img {
+    margin-left: 22px !important;
+  }
+  .search-disease-section .left-column h2 {
+    font-size: 43px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1194,7 +1272,7 @@ footer {
   }
 
   .left-column h2 {
-    font-size: 50px;
+    font-size: 43px;
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -1230,7 +1308,7 @@ footer {
   }
 
   .book-appointment-section {
-    margin: 5px;
+    margin: 0px 34px;
   }
   .specification-section .row {
     flex-direction: column;
@@ -1242,7 +1320,7 @@ footer {
   }
 
   .specification-section .text-column h2 {
-    font-size: 24px;
+    font-size: 36px;
   }
 
   .specification-section .text-column p {
@@ -1280,6 +1358,7 @@ footer {
   .alphabet-buttons .row {
     flex-direction: column;
     grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
   }
 
   .alphabet-buttons span {
@@ -1316,6 +1395,7 @@ footer {
   .doctor-cards {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 
   .doctor-card {
@@ -1381,5 +1461,8 @@ footer {
 
   .social-icons a img {
     width: 20px;
+  }
+  .option-box.selected {
+    margin-left: 0px;
   }
 }
