@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const text = document.querySelector(".sec-text");
 
   /**
-   * It is for animation text
+   * textLoad() is for animation text
+   *
    */
   const textLoad = () => {
     setTimeout(() => {
